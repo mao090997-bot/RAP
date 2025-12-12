@@ -73,14 +73,15 @@ section {
 }
 
 article {
-
+    width: 500 px 200px;
     background: rgb(222, 199, 199);
     padding: 20px;
     border-radius: 27px;
     border: 1px solid #ccc;
-    margin-bottom: 20px 15px; /* Modelo de caja */
+    margin-bottom: 20px; /* Modelo de caja */
     position: relative;
 }
+
 
 /* PSEUDOCLASE 3: first-child */
 article:first-child {
@@ -107,8 +108,10 @@ article p::first-line {
 
 /* Animación ligera en imágenes (interacción) */
 article img {
+  width: 500px;
+  height: auto;
     display: block;
-    margin: 10px auto;
+    margin: auto;
     border-radius: 10px;
     transition: transform 0.3s;
 }
@@ -173,4 +176,10 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 30px;
+}
+#rap-article .rap-contenido {
+  display: flex;           /* coloca hijos en fila */
+  gap: 20px;               /* espacio entre imagen y video */
+  align-items: flex-start; /* alinear arriba */
+  margin-bottom: 20px;
 }
