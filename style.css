@@ -2,12 +2,19 @@
    ESTILOS GENERALES (HERENCIA)
 ====================================== */
 body {
+  
+   
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f2f2f2;
     color: #333;
     line-height: 1.5;
+    margin: 0; 
+    min-height: 100vh;  
+    background: linear-gradient(135deg, #825e55, #02ff17, #86a8e7, #6eccc5); 
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    
 }
 
 /* ======================================
@@ -16,22 +23,16 @@ body {
 
 header {
     background: #1e1e1e;
-    color: white;
+    color: rgb(222, 221, 231);
     text-align: center;
     padding: 25px;
     position: relative;
+     background-image:url(imagenes/fractal-991757_1280.webp);
+     background-size: cover;
+     display: flex;
+     height: 150px;
 }
 
-/* Pseudo-elemento decorativo detrás del título */
-header h1::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: #6c63ff;
-    margin: 10px auto 0 auto;
-    border-radius: 5px;
-}
 
 nav button {
     padding: 10px 18px;
@@ -64,17 +65,18 @@ nav button a {
 ====================================== */
 
 section {
-    width: 80%;
+    width: 65%;
     margin: auto;
-    padding: 20px;
+    padding: 18px;
 }
 
 article {
-    background: white;
+
+    background: rgb(222, 199, 199);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 27px;
     border: 1px solid #ccc;
-    margin-bottom: 20px; /* Modelo de caja */
+    margin-bottom: 20px 15px; /* Modelo de caja */
     position: relative;
 }
 
