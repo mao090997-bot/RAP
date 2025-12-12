@@ -7,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    
     line-height: 1.5;
     margin: 0; 
     min-height: 100vh;  
@@ -30,18 +30,20 @@ header {
      background-image:url(imagenes/fractal-991757_1280.webp);
      background-size: cover;
      display: flex;
+     justify-content: center;
      height: 150px;
 }
 
-
 nav button {
+    align-items: center;
     padding: 10px 18px;
     margin: 5px;
     border: none;
     border-radius: 6px;
     background: #6c63ff;
-    cursor: pointer;
+    text-align: center;
     transition: 0.3s;
+    
 }
 
 /* PSEUDOCLASE 1: hover */
