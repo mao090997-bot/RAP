@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Formulario de Contacto</h1>
+
+    <form autocomplete="on">
+
+        <!-- Agrupación general -->
+        <fieldset>
+            <legend>Información Personal</legend>
+
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com" required><br><br>
+
+            <label for="telefono">Número de teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" placeholder="3001234567" required><br><br>
+
+            <label for="fecha">Fecha de contacto:</label><br>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Campo con opciones agrupadas -->
+        <fieldset>
+            <legend>Motivo del Mensaje</legend>
+
+            <label for="motivo">Selecciona un motivo:</label><br>
+            <select id="motivo" name="motivo" required>
+                <optgroup label="Consultas">
+                    <option value="informacion">Solicitar información</option>
+                    <option value="precio">Consultar precios</option>
+                </optgroup>
+
+                <optgroup label="Soporte">
+                    <option value="tecnico">Soporte técnico</option>
+                    <option value="queja">Registrar una queja</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <!-- Botones de radio -->
+        <fieldset>
+            <legend>¿Cómo prefieres que te contactemos?</legend>
+
+            <input type="radio" id="contacto-correo" name="contacto" value="correo" required>
+            <label for="contacto-correo">Correo electrónico</label><br>
+
+            <input type="radio" id="contacto-telefono" name="contacto" value="telefono">
+            <label for="contacto-telefono">Teléfono</label><br>
+
+            <input type="radio" id="contacto-whatsapp" name="contacto" value="whatsapp">
+            <label for="contacto-whatsapp">WhatsApp</label>
+        </fieldset>
+
+        <br>
+
+        <!-- Mensaje -->
+        <fieldset>
+            <legend>Tu Mensaje</legend>
+
+            <label for="mensaje">Escribe tu mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </fieldset>
+
+        <br>
+
+        <!-- Botones -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+
+    </form>
+
+</body>
+</html>
